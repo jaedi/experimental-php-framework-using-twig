@@ -14,7 +14,9 @@ If you want to test this out. Just do follow the ff instructions:
   ```
  - extract the files
  - run composer install in command line.
-   ```bash composer install```
+   ```bash
+   composer install
+   ```
 
 
 
