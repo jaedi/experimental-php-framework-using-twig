@@ -14,10 +14,8 @@ If you want to test this out. Just do follow the ff instructions:
   ```
  - extract the files
  - run composer install in command line.
-   ```bash
-   composer install
-  ```
+   ```bash composer install```
 
 
 
-##The official bug tracking app will be released soon.
+### The official bug tracking app will be released soon.
