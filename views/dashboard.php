@@ -1,0 +1,157 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['loggedin'])) {
+    header('Location: index.html');
+    exit;
+}
+include_once('includes/header.php');
+?>
+
+
+
+<div class="container mx-auto mt-16 lg:px-16 md:px-8 sm:px-8 grid grid-rows-3 grid-flow-col gap-4">
+
+    <div class="row-span-3 ...">
+        <!--First Start-->
+        <table class="table-auto w-full mb-4 border-collapse border-2 border-gray-200" id="timeline_section_table">
+        <thead>
+            <tr class="bg-red-800 text-white">
+            <th class="border px-6 py-2" colspan="3">
+                <svg class="fill-current float-left ml-2" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>
+                <span class="float-left ml-2">TIMELINE</span>
+                
+                <span class="float-right minimize-table pointer">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </span>
+
+            </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td class="border px-6 py-4">Intro to CSS</td>
+            <td class="border px-6 py-4">Adam</td>
+            <td class="border px-6 py-4">858</td>
+            </tr>
+            <tr class="bg-gray-100">
+            <td class="border px-6 py-4">A Long and Winding Tour of the History of UI Frameworks and Tools and the Impact on Design</td>
+            <td class="border px-6 py-4">Adam</td>
+            <td class="border px-6 py-4">112</td>
+            </tr>
+            <tr>
+            <td class="border px-6 py-4">Intro to JavaScript</td>
+            <td class="border px-6 py-4">1,280</td>
+            <td class="border px-6 py-4">Chris</td>
+            </tr>
+            <tr>
+            <td class="border px-6 py-4">Intro to JavaScript</td>
+            <td class="border px-6 py-4">1,280</td>
+            <td class="border px-6 py-4">Chris</td>
+            </tr>
+            <tr>
+            <td class="border px-6 py-4">Intro to JavaScript</td>
+            <td class="border px-6 py-4">1,280</td>
+            <td class="border px-6 py-4">Chris</td>
+            </tr>
+            <tr>
+            <td class="border px-6 py-4">Intro to JavaScript</td>
+            <td class="border px-6 py-4">1,280</td>
+            <td class="border px-6 py-4">Chris</td>
+            </tr>
+            <tr>
+            <td class="border px-6 py-4">Intro to JavaScript</td>
+            <td class="border px-6 py-4">1,280</td>
+            <td class="border px-6 py-4">Chris</td>
+            </tr>
+            <tr>
+            <td class="border px-6 py-4">Intro to JavaScript</td>
+            <td class="border px-6 py-4">1,280</td>
+            <td class="border px-6 py-4">Chris</td>
+            </tr>
+            <tr>
+            <td class="border px-6 py-4">Intro to JavaScript</td>
+            <td class="border px-6 py-4">1,280</td>
+            <td class="border px-6 py-4">Chris</td>
+            </tr>
+        </tbody>
+        </table>
+        <!--First End-->
+    </div>
+  <div class="row-span-1 col-span-2 ...">
+        <!--Second Start-->
+        <table class="table-auto w-full mb-4 border-collapse border-2 border-gray-200" id="to_be_reviewed_section_table">
+        <thead>
+            <tr class="bg-red-800 text-white">
+            <th class="border px-6 py-2" colspan="3">
+                <svg class="fill-current float-left ml-2" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>
+                <span class="float-left ml-2">TO BE REVIEWED</span>
+
+                <span class="float-right minimize-table pointer">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </span>
+            </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td class="border px-6 py-4">Intro to CSS</td>
+            <td class="border px-6 py-4">Adam</td>
+            <td class="border px-6 py-4">858</td>
+            </tr>
+            <tr class="bg-gray-100">
+            <td class="border px-6 py-4">A Long and Winding Tour of the History of UI Frameworks and Tools and the Impact on Design</td>
+            <td class="border px-6 py-4">Adam</td>
+            <td class="border px-6 py-4">112</td>
+            </tr>
+            <tr>
+            <td class="border px-6 py-4">Intro to JavaScript</td>
+            <td class="border px-6 py-4">1,280</td>
+            <td class="border px-6 py-4">Chris</td>
+            </tr>
+        </tbody>
+        </table>
+        <!--Second End-->
+  </div>
+  <div class="row-span-2 col-span-2 ...">
+          <!--Third Start-->
+          <table class="table-auto w-full mb-4 border-collapse border-2 border-gray-200" id="approved_section_table">
+            <thead>
+              <tr class="bg-red-800 text-white">
+                <th class="border px-6 py-2" colspan="3">
+                  <svg class="fill-current float-left ml-2" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>
+                  <span class="float-left ml-2">APPROVED</span>
+
+                  <span class="float-right minimize-table pointer">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border px-6 py-4">Intro to CSS</td>
+                <td class="border px-6 py-4">Adam</td>
+                <td class="border px-6 py-4">858</td>
+              </tr>
+              <tr class="bg-gray-100">
+                <td class="border px-6 py-4">A Long and Winding Tour of the History of UI Frameworks and Tools and the Impact on Design</td>
+                <td class="border px-6 py-4">Adam</td>
+                <td class="border px-6 py-4">112</td>
+              </tr>
+              <tr>
+                <td class="border px-6 py-4">Intro to JavaScript</td>
+                <td class="border px-6 py-4">1,280</td>
+                <td class="border px-6 py-4">Chris</td>
+              </tr>
+            </tbody>
+          </table>
+          <!--Third End-->
+  </div>
+    
+</div>
+
+
+<?php include_once('includes/footer.php');?>
+
